@@ -6,12 +6,11 @@
 /*   By: osajide <osajide@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/28 11:14:46 by osajide           #+#    #+#             */
-/*   Updated: 2022/11/01 12:27:49 by osajide          ###   ########.fr       */
+/*   Updated: 2023/04/07 01:25:27 by osajide          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"ft_printf.h"
-#include<stdio.h>
 
 static	int	p_check(va_list args, const char *s)
 {
@@ -65,10 +64,3 @@ int	ft_printf(const char *s, ...)
 	va_end(args);
 	return (count);
 }
-/*
-int main()
-{
-	int nb = -2147483648;
-	int n = ft_printf("%d", nb);
-	ft_printf("\n%d", n);
-}*/
